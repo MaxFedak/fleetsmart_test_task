@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { nanoid } from "nanoid";
 import { TableRows } from '../tableRows/TableRows';
 import { Input } from '../input/Input';
+import { TotalPrice } from '../totalSum/TotalSum';
 
 
 export const Table = ({columnNames}) => {
@@ -29,6 +30,7 @@ export const Table = ({columnNames}) => {
             <TableRows items={itemList} addItem={addItemsToArray}/>
          </table>
          <Input addItem={addItemsToArray} list={itemList}/>
+         <TotalPrice list={itemList} />
       </>
    );
 }
