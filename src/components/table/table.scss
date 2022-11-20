@@ -1,0 +1,55 @@
+$header-font: 50px;
+$text-font: $header-font * 0.7;
+
+.table {
+   width: 100%;
+   margin-bottom: 30px;
+   background-color: transparent;
+
+   &__header {
+      font-size: $header-font;
+   }
+   &__row {
+      text-align: center;
+      font-size: $text-font;
+   }
+
+   &__element {
+      // border: 1px solid black;
+      margin-right: 20px;
+      text-transform: capitalize;
+      // line-height: 40px;
+      &:first-child {
+         width: 400px;
+      }
+   }
+
+   &__delete-but {
+      height: 20px;
+      padding-bottom: 5px;
+
+      // font-size: 25px;
+      color: red;
+      border: none;
+      background-color: transparent;
+      // background-image: url('../../img/icone-delete.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      color: red;
+
+      transition: transfrom 5s; 
+
+      &:hover {
+         transform: scale(1.2);
+      }
+   }
+
+   &__delete-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      width: 25px;
+      height: 25px;
+   }
+}

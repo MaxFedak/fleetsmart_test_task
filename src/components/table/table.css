@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+.table__header {
+  font-size: 50px;
+}
+.table__row {
+  text-align: center;
+  font-size: 35px;
+}
+.table__element {
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+.table__element:first-child {
+  width: 400px;
+}
+.table__delete-but {
+  height: 20px;
+  padding-bottom: 5px;
+  color: red;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: red;
+  transition: transfrom 5s;
+}
+.table__delete-but:hover {
+  transform: scale(1.2);
+}
+.table__delete-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 25px;
+  height: 25px;
+}/*# sourceMappingURL=table.css.map */

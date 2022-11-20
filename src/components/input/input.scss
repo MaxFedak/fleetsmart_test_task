@@ -1,0 +1,38 @@
+.input {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 800px;
+   margin-bottom: 30px;
+
+   &__field {
+      margin-right: 20px;
+      font-size: 30px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &--text {
+         width: 200px;
+      }
+
+      &--number {
+         width: 100px;
+      }
+   }
+
+   &__button {
+      background-color: transparent;
+      border: none;
+      width: 50px;
+      height: 50px;
+   }
+   &__delete-icon  {
+      height: 40px;
+      color: green;
+   }
+}
+
+

@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import { TableRows } from '../tableRows/TableRows';
 import { Input } from '../input/Input';
 import { TotalPrice } from '../totalSum/TotalSum';
+import './table.css';
 
 
 export const Table = ({columnNames}) => {
@@ -17,12 +18,12 @@ export const Table = ({columnNames}) => {
    }
 
    return (
-      <>
-         <table>
-            <thead>
-               <tr>
+      <div className='content'>
+         <table className='table'>
+            <thead className='table__header'>
+               <tr >
                   {columnNames.map(column => (
-                     <th key={nanoid()}>{column}</th>
+                     <th key={nanoid()} className='table__element'>{column}</th>
                   ))}
                   <th></th>
                </tr>
@@ -31,6 +32,6 @@ export const Table = ({columnNames}) => {
          </table>
          <Input addItem={addItemsToArray} list={itemList}/>
          <TotalPrice list={itemList} />
-      </>
+      </div>
    );
 }
