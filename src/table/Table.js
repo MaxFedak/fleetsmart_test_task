@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { nanoid } from "nanoid";
+import { TableRows } from '../tableRows/TableRows';
 
 
 export const Table = ({columnNames}) => {
+   const [itemList, setItemList] = useState([]);
+
+   const addItemsToArray = (newItem) => {
+      if (newItem instanceof Array) {
+         setItemList(itemListArray => [...newItem])
+      } else {
+         setItemList(itemListArray => [...itemListArray, newItem])
+      }
+   }
+
    return (
       <>
          <table>
@@ -14,6 +25,7 @@ export const Table = ({columnNames}) => {
                   <th></th>
                </tr>
             </thead>
+            <TableRows items={itemList} addItem={addItemsToArray}/>
          </table>
       </>
    );
