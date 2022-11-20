@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fleetsmart_test_task/static/css/main.7ece58d3.css",
+    "main.js": "/fleetsmart_test_task/static/js/main.1a496241.js",
+    "static/js/787.a3d96dd9.chunk.js": "/fleetsmart_test_task/static/js/787.a3d96dd9.chunk.js",
+    "index.html": "/fleetsmart_test_task/index.html",
+    "main.7ece58d3.css.map": "/fleetsmart_test_task/static/css/main.7ece58d3.css.map",
+    "main.1a496241.js.map": "/fleetsmart_test_task/static/js/main.1a496241.js.map",
+    "787.a3d96dd9.chunk.js.map": "/fleetsmart_test_task/static/js/787.a3d96dd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ece58d3.css",
+    "static/js/main.1a496241.js"
+  ]
+}
