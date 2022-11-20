@@ -5,7 +5,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 export const Input = ({ addItem, list}) => {
    const newProduct = {
       name: undefined,
-      quantity: undefined,
+      quantity: 1,
       price: undefined,
    };
 
@@ -22,7 +22,8 @@ export const Input = ({ addItem, list}) => {
             const productExists = list.findIndex(item => item.name === newProduct.name);
 
             if (productExists !== -1) {
-               list[productExists].quantity += newProduct.quantity;
+               list[productExists].quantity += +newProduct.quantity;
+               list[productExists].price = +newProduct.price;
                addItem(list)
             } else {
                addItem(newProduct);
@@ -54,6 +55,7 @@ export const Input = ({ addItem, list}) => {
             type="number" 
             name="price" 
             placeholder='Price' 
+            step={0.01}
             className='input__field input__field--number'
             onChange={onFormChangeHandler}></input>
          <button className='input__button' type='submit'>

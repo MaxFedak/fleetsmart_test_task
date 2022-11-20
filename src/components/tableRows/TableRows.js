@@ -19,7 +19,7 @@ export const TableRows = ({items, addItem}) => {
          {items.map(listItem => (
             <tr key={nanoid()} className='table__row'>
                {Object.values(listItem).map((rowElement) => (
-                  <td key={nanoid()} className='table__element'>
+                  <td key={nanoid()} className='table__element' >
                      {rowElement}
                   </td>
                ))}

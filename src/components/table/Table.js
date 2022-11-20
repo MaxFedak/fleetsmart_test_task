@@ -5,24 +5,24 @@ import { Input } from '../input/Input';
 import { TotalPrice } from '../totalSum/TotalSum';
 import './table.css';
 
-const statArr = {
+const sortStatus = {
    name: 'asc',
    quantity: 'asc',
    price: 'asc',
 }
 
 export const sortTable = (key, itemList) => {
-   
+
    switch (key) {
       case 'name':
-         statArr[key] === 'asc'
-            ? itemList.sort((a, b) => a[key].localeCompare(b[key]))
-            : itemList.sort((a, b) => b[key].localeCompare(a[key]));
+         sortStatus[key] === 'asc'
+            ? itemList.sort((a, b) => ('' + a.name).localeCompare('' + b.name))
+            : itemList.sort((a, b) => ('' + b.name).localeCompare('' + a.name));
          break;
       
       case 'quantity':
       case 'price':
-         statArr[key] === 'asc'
+         sortStatus[key] === 'asc'
             ? itemList.sort((a, b) => a[key] - b[key])
             : itemList.sort((a, b) => b[key] - a[key]);
          break;
@@ -34,7 +34,7 @@ export const sortTable = (key, itemList) => {
 }
 
 const test = (target) => {
-   statArr[target] = statArr[target] === 'asc'
+   sortStatus[target] = sortStatus[target] === 'asc'
       ? 'desc'
       : 'asc';
 }

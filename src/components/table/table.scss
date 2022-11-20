@@ -2,29 +2,36 @@ $header-font: 50px;
 $text-font: $header-font * 0.7;
 
 .table {
-   width: 100%;
+   margin: 0 auto;
    margin-bottom: 30px;
    background-color: transparent;
 
    &__header {
       font-size: $header-font;
+      width: 100%;
    }
    &__row {
       text-align: center;
       font-size: $text-font;
+      width: 100%;
+      box-sizing: border-box;
+      padding-top: 30px;
    }
 
    &__element {
-      // border: 1px solid black;
       margin-right: 20px;
+      box-sizing: border-box;
       text-transform: capitalize;
+      width: 175px;
+      padding: 0 40px 20px;
       // line-height: 40px;
       &:first-child {
-         width: 400px;
+         width: 250px;
       }
 
       &--header {
          position: relative;
+         padding-bottom: 40px;
 
          &::after {
             content: '';
@@ -32,8 +39,8 @@ $text-font: $header-font * 0.7;
             background-image: url('../../img/sort.png');
             width: 15px;
             height: 15px;
-            bottom: 0;
-            margin-left: 7px;
+            bottom: 40%;
+            margin-left: 10px;
             transform: translate(-50%, -50%);
          }
       }
