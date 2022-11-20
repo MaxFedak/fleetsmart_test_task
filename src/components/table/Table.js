@@ -5,6 +5,41 @@ import { Input } from '../input/Input';
 import { TotalPrice } from '../totalSum/TotalSum';
 import './table.css';
 
+const statArr = {
+   name: 'asc',
+   quantity: 'asc',
+   price: 'asc',
+}
+
+export const sortTable = (key, itemList) => {
+   
+   switch (key) {
+      case 'name':
+         statArr[key] === 'asc'
+            ? itemList.sort((a, b) => a[key].localeCompare(b[key]))
+            : itemList.sort((a, b) => b[key].localeCompare(a[key]));
+         break;
+      
+      case 'quantity':
+      case 'price':
+         statArr[key] === 'asc'
+            ? itemList.sort((a, b) => a[key] - b[key])
+            : itemList.sort((a, b) => b[key] - a[key]);
+         break;
+      
+      default:
+         throw new Error('wrong key');
+   }
+   test(key);
+}
+
+const test = (target) => {
+   statArr[target] = statArr[target] === 'asc'
+      ? 'desc'
+      : 'asc';
+
+      console.log(statArr);
+}
 
 export const Table = ({columnNames}) => {
    const [itemList, setItemList] = useState([]);
@@ -17,13 +52,18 @@ export const Table = ({columnNames}) => {
       }
    }
 
+   const headerClickHandler = e => {
+      sortTable(e.target.textContent, itemList);
+      addItemsToArray(itemList);
+   }
+
    return (
       <div className='content'>
          <table className='table'>
             <thead className='table__header'>
                <tr >
                   {columnNames.map(column => (
-                     <th key={nanoid()} className='table__element'>{column}</th>
+                     <th key={nanoid()} className='table__element table__element--header' onClick={headerClickHandler}>{column}</th>
                   ))}
                   <th></th>
                </tr>

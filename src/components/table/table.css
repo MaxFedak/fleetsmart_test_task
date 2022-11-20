@@ -17,25 +17,27 @@
 .table__element:first-child {
   width: 400px;
 }
-.table__delete-but {
-  height: 20px;
-  padding-bottom: 5px;
-  color: red;
-  border: none;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: red;
-  transition: transfrom 5s;
+.table__element--header {
+  position: relative;
 }
-.table__delete-but:hover {
-  transform: scale(1.2);
+.table__element--header::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/sort.png");
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  margin-left: 7px;
+  transform: translate(-50%, -50%);
 }
 .table__delete-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: darkred;
   width: 25px;
   height: 25px;
+}
+.table__delete-icon:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=table.css.map */

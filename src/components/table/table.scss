@@ -22,25 +22,20 @@ $text-font: $header-font * 0.7;
       &:first-child {
          width: 400px;
       }
-   }
 
-   &__delete-but {
-      height: 20px;
-      padding-bottom: 5px;
+      &--header {
+         position: relative;
 
-      // font-size: 25px;
-      color: red;
-      border: none;
-      background-color: transparent;
-      // background-image: url('../../img/icone-delete.svg');
-      background-position: center;
-      background-repeat: no-repeat;
-      color: red;
-
-      transition: transfrom 5s; 
-
-      &:hover {
-         transform: scale(1.2);
+         &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../../img/sort.png');
+            width: 15px;
+            height: 15px;
+            bottom: 0;
+            margin-left: 7px;
+            transform: translate(-50%, -50%);
+         }
       }
    }
 
@@ -48,8 +43,12 @@ $text-font: $header-font * 0.7;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: black;
+      color: darkred;
       width: 25px;
       height: 25px;
+
+      &:hover {
+         transform: scale(1.2);
+      }
    }
 }

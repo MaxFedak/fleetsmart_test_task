@@ -28,4 +28,7 @@
 .input__delete-icon {
   height: 40px;
   color: green;
+}
+.input__delete-icon:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=input.css.map */

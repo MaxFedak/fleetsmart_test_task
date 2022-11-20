@@ -32,6 +32,10 @@
    &__delete-icon  {
       height: 40px;
       color: green;
+
+      &:hover {
+         transform: scale(1.2);
+      }
    }
 }
 
