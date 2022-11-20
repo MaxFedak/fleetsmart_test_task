@@ -35,32 +35,33 @@ export const Input = ({ addItem, list}) => {
    }
 
       // addItem(data)
-   return (
-      <form className='input' onSubmit={onSubmitHandler}>
-         <input 
-            type="text" 
-            name="name" 
-            placeholder='Product' 
-            className='input__field input__field--text'
-            onChange={onFormChangeHandler}
-         ></input>
-         <input 
-            type="number" 
-            name="quantity" 
-            placeholder='Quant.'
-            className='input__field input__field--number'
-            onChange={onFormChangeHandler}
-         ></input>
-         <input
-            type="number" 
-            name="price" 
-            placeholder='Price' 
-            step={0.01}
-            className='input__field input__field--number'
-            onChange={onFormChangeHandler}></input>
-         <button className='input__button' type='submit'>
-            <FontAwesomeIcon className='input__delete-icon' icon={faPlus} rotation={35} />
-         </button>
-      </form>
-   )
+      return (
+         <form className='input' onSubmit={onSubmitHandler}>
+            <input 
+               type="text" 
+               name="name" 
+               placeholder='Product' 
+               className='input__field input__field--text'
+               onChange={onFormChangeHandler}
+            ></input>
+            <input 
+               type="number" 
+               name="quantity" 
+               placeholder='Quant.'
+               className='input__field input__field--number'
+               onChange={onFormChangeHandler}
+            ></input>
+            <input
+               type="number" 
+               name="price" 
+               placeholder='Price' 
+               step={0.01}
+               className='input__field input__field--number'
+               onChange={onFormChangeHandler}></input>
+            <button className='input__button' type='submit'>
+               <FontAwesomeIcon className='input__delete-icon' icon={faPlus} rotation={35} />
+            </button>
+         </form>
+      )
 }
+
