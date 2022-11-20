@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { nanoid } from "nanoid";
 import { TableRows } from '../tableRows/TableRows';
+import { Input } from '../input/Input';
 
 
 export const Table = ({columnNames}) => {
@@ -27,6 +28,7 @@ export const Table = ({columnNames}) => {
             </thead>
             <TableRows items={itemList} addItem={addItemsToArray}/>
          </table>
+         <Input addItem={addItemsToArray} list={itemList}/>
       </>
    );
 }
