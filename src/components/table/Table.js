@@ -37,8 +37,6 @@ const test = (target) => {
    statArr[target] = statArr[target] === 'asc'
       ? 'desc'
       : 'asc';
-
-      console.log(statArr);
 }
 
 export const Table = ({columnNames}) => {
