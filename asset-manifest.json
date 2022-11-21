@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fleetsmart_test_task/static/css/main.9164dfee.css",
-    "main.js": "/fleetsmart_test_task/static/js/main.ae5ac180.js",
+    "main.css": "/fleetsmart_test_task/static/css/main.cbd7cf27.css",
+    "main.js": "/fleetsmart_test_task/static/js/main.815afade.js",
     "static/js/787.a3d96dd9.chunk.js": "/fleetsmart_test_task/static/js/787.a3d96dd9.chunk.js",
     "index.html": "/fleetsmart_test_task/index.html",
-    "main.9164dfee.css.map": "/fleetsmart_test_task/static/css/main.9164dfee.css.map",
-    "main.ae5ac180.js.map": "/fleetsmart_test_task/static/js/main.ae5ac180.js.map",
+    "main.cbd7cf27.css.map": "/fleetsmart_test_task/static/css/main.cbd7cf27.css.map",
+    "main.815afade.js.map": "/fleetsmart_test_task/static/js/main.815afade.js.map",
     "787.a3d96dd9.chunk.js.map": "/fleetsmart_test_task/static/js/787.a3d96dd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9164dfee.css",
-    "static/js/main.ae5ac180.js"
+    "static/css/main.cbd7cf27.css",
+    "static/js/main.815afade.js"
   ]
 }
