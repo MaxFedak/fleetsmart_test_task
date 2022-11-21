@@ -1,6 +1,8 @@
 import { nanoid } from "nanoid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { TableRow } from '../tableRow/TableRow';
+import { Input } from '../input/Input';
 
 export const TableRows = ({items, addItem}) => {
 
@@ -15,19 +17,15 @@ export const TableRows = ({items, addItem}) => {
    }
 
    return (
-      <tbody>
-         {items.map(listItem => (
-            <tr key={nanoid()} className='table__row'>
-               {Object.values(listItem).map((rowElement) => (
-                  <td key={nanoid()} className='table__element' >
-                     {rowElement}
-                  </td>
-               ))}
-               <td data-name={listItem.name} className='table__element table__delete-but'>
-                     <FontAwesomeIcon className='table__delete-icon' icon={faTrash}  onClick={deleteRowHandler} />
-               </td>
-            </tr>
-         ))}
-      </tbody>
+   <>
+      {items.map(row => (
+         <>
+            <TableRow row={row} key={nanoid()}/>
+            <div key={nanoid()} className='table__element' data-name={row.name} >
+               <FontAwesomeIcon key={nanoid()} className='table__delete-icon' icon={faTrash}  onClick={deleteRowHandler} />
+            </div>
+         </>
+      ))}
+   </>
    );
 }

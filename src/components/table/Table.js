@@ -57,19 +57,16 @@ export const Table = ({columnNames}) => {
 
    return (
       <div className='content'>
-         <table className='table'>
-            <thead className='table__header'>
-               <tr >
-                  {columnNames.map(column => (
-                     <th key={nanoid()} className='table__element table__element--header' onClick={headerClickHandler}>{column}</th>
-                  ))}
-                  <th></th>
-               </tr>
-            </thead>
-            <TableRows items={itemList} addItem={addItemsToArray}/>
-         </table>
+         <div className='table'>
+            {columnNames.map(item => (
+               <div key={nanoid()} className='table__element table__header' onClick={headerClickHandler}>
+                  {item}
+               </div>
+            ))}
+            <div className='table__element'></div>
+            <TableRows items={itemList} addItem={addItemsToArray} />
+         </div>
          <Input addItem={addItemsToArray} list={itemList}/>
-         <TotalPrice list={itemList} />
       </div>
    );
 }

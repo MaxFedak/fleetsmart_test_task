@@ -1,51 +1,54 @@
 .table {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  background-color: transparent;
-}
-.table__header {
-  font-size: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-}
-.table__row {
-  text-align: center;
-  font-size: 35px;
-  width: 100%;
-  box-sizing: border-box;
-  padding-top: 30px;
+  grid-template-columns: 1.75fr repeat(2, 1fr) 50px;
 }
 .table__element {
-  margin-right: 20px;
-  box-sizing: border-box;
-  text-transform: capitalize;
-  width: 175px;
-  padding: 0 40px 20px;
-}
-.table__element:first-child {
-  width: 250px;
-}
-.table__element--header {
-  position: relative;
-  padding-bottom: 40px;
-}
-.table__element--header::after {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/sort.png");
-  width: 15px;
-  height: 15px;
-  bottom: 40%;
-  margin-left: 10px;
-  transform: translate(-50%, -50%);
-}
-.table__delete-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 22px;
+  height: 50px;
+}
+.table__header {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.table__header::after {
+  content: "";
+  background-image: url("../../img/sort.png");
+  width: 15px;
+  height: 15px;
+  margin-left: 13px;
+  transform: translate(-50%, 85%);
+}
+.table__input {
+  height: 30px;
+  min-width: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+.table__delete-icon {
   color: darkred;
-  width: 25px;
-  height: 25px;
+  transition: transform 0.5s;
 }
 .table__delete-icon:hover {
+  transform: scale(1.2);
+}
+.table__add-button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+.table__add-icon {
+  color: darkgreen;
+  width: 33px;
+  height: 33px;
+  transition: transform 0.5s;
+}
+.table__add-icon:hover {
   transform: scale(1.2);
 }/*# sourceMappingURL=table.css.map */

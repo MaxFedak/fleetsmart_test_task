@@ -1,4 +1,4 @@
-import './input.css'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,36 +33,36 @@ export const Input = ({ addItem, list}) => {
             const allInputs = [...document.querySelectorAll('input')];
             allInputs.map(item => item.value = '')
          } else {
-            alert('Please fill all required fields *')go
+            alert('Please fill all required fields *');
          }
 
    }
 
    return (
-      <form className='input' onSubmit={onSubmitHandler}>
+      <form className='table' onSubmit={onSubmitHandler}>
          <input 
+            className="table__element table__input"
             type="text" 
             name="name" 
             placeholder='Product*' 
-            className='input__field input__field--text'
             onChange={onFormChangeHandler}
          ></input>
          <input 
+            className="table__element table__input"
             type="number" 
             name="quantity" 
             placeholder='Quant.'
-            className='input__field input__field--number'
             onChange={onFormChangeHandler}
          ></input>
          <input
+            className="table__element table__input"
             type="number" 
             name="price" 
             placeholder='Price*' 
             step={0.01}
-            className='input__field input__field--number'
             onChange={onFormChangeHandler}></input>
-         <button className='input__button' type='submit'>
-            <FontAwesomeIcon className='input__delete-icon' icon={faPlus} rotation={35} />
+         <button className="table__element table__add-button" type='submit'>
+            <FontAwesomeIcon className='table__add-icon' icon={faPlus} />
          </button>
       </form>
    )
