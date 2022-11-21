@@ -18,49 +18,52 @@ export const Input = ({ addItem, list}) => {
 
    const onSubmitHandler = (event) =>{
       event.preventDefault();
-         if (Object.values(newProduct).every(product => product)) {
-            const productExists = list.findIndex(item => item.name === newProduct.name);
 
-            if (productExists !== -1) {
-               list[productExists].quantity += +newProduct.quantity;
-               list[productExists].price = +newProduct.price;
-               addItem(list)
-            } else {
-               addItem(newProduct);
-               console.log(event)
-            }
+      const productExists = list.findIndex(item => item.name === newProduct.name);
 
-            const allInputs = [...document.querySelectorAll('input')];
-            allInputs.map(item => item.value = '')
-         } else {
-            alert('Please fill all required fields *');
-         }
+      if (productExists !== -1) {
+         list[productExists].quantity += +newProduct.quantity;
+         list[productExists].price = +newProduct.price;
+         addItem(list)
+      } else {
+         addItem(newProduct);
+         console.log(event)
+      }
+
+      const allInputs = [...document.querySelectorAll('input')];
+      allInputs.map(item => item.value = '')
+         
 
    }
 
    return (
       <form className='table input' onSubmit={onSubmitHandler}>
          <input 
-            className="table__element table__input"
+            className="table__element input__new"
             type="text" 
             name="name" 
             placeholder='Product*' 
             onChange={onFormChangeHandler}
+            required
          ></input>
          <input 
-            className="table__element table__input"
+            className="table__element input__new"
             type="number" 
             name="quantity" 
             placeholder='Quant.'
+            min={1}
             onChange={onFormChangeHandler}
          ></input>
          <input
-            className="table__element table__input"
+            className="table__element input__new"
             type="number" 
             name="price" 
             placeholder='Price*' 
             step={0.01}
-            onChange={onFormChangeHandler}></input>
+            min={1}
+            onChange={onFormChangeHandler}
+            required
+            ></input>
          <button className="table__element table__add-button" type='submit'>
             <FontAwesomeIcon className='table__add-icon' icon={faPlus} />
          </button>

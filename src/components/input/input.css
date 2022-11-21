@@ -1,3 +1,11 @@
 .input {
-  margin-top: 30px;
+  margin-top: 50px;
+}
+.input__new {
+  border: 1px solid black;
+  margin-right: 5px;
+}
+.input__new:focus {
+  outline: none;
+  background-color: aliceblue;
 }/*# sourceMappingURL=input.css.map */

@@ -58,7 +58,7 @@ export const Table = ({columnNames}) => {
    }
 
    return (
-      <div className='content'>
+      <>
          <div className='table'>
             {columnNames.map(item => (
                <div key={nanoid()} className='table__element table__header' onClick={headerClickHandler}>
@@ -70,6 +70,6 @@ export const Table = ({columnNames}) => {
          </div>
          <Input addItem={addItemsToArray} list={itemList}/>
          <TotalPrice list={itemList} />
-      </div>
+      </>
    );
 }
