@@ -5,7 +5,7 @@ export const TotalPrice = ({list}) => {
 
    return (
       <p className='sum'>
-         {`Total price: ${totPrice} £`}
+         {` Total price: ${totPrice} £ `}
       </p>
    )
 }

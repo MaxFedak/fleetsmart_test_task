@@ -67,6 +67,7 @@ export const Table = ({columnNames}) => {
             <TableRows items={itemList} addItem={addItemsToArray} />
          </div>
          <Input addItem={addItemsToArray} list={itemList}/>
+         <TotalPrice list={itemList} />
       </div>
    );
 }

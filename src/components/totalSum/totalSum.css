@@ -1,8 +1,9 @@
 .sum {
-  display: inline-block;
-  background-color: transparent;
+  position: relative;
+  align-self: flex-end;
   margin-right: 25px;
-  font-size: 50px;
+  font-size: 40px;
   text-align: right;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  border-top: 1px solid black;
 }/*# sourceMappingURL=totalSum.css.map */

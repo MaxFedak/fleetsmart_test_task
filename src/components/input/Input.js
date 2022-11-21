@@ -1,6 +1,6 @@
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import './input.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 export const Input = ({ addItem, list}) => {
    const newProduct = {
@@ -39,7 +39,7 @@ export const Input = ({ addItem, list}) => {
    }
 
    return (
-      <form className='table' onSubmit={onSubmitHandler}>
+      <form className='table input' onSubmit={onSubmitHandler}>
          <input 
             className="table__element table__input"
             type="text" 
