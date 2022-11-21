@@ -42,6 +42,8 @@ const test = (target) => {
 export const Table = ({columnNames}) => {
    const [itemList, setItemList] = useState([]);
 
+   document.title = 'Product list'
+
    const addItemsToArray = (newItem) => {
       if (newItem instanceof Array) {
          setItemList(itemListArray => [...newItem])

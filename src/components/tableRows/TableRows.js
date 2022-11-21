@@ -20,7 +20,7 @@ export const TableRows = ({items, addItem}) => {
    <>
       {items.map(row => (
          <>
-            <TableRow row={row} key={nanoid()}/>
+            <TableRow row={row} list={items} changeList={addItem} key={nanoid()}/>
             <div key={nanoid()} className='table__element' data-name={row.name} >
                <FontAwesomeIcon key={nanoid()} className='table__delete-icon' icon={faTrash}  onClick={deleteRowHandler} />
             </div>
