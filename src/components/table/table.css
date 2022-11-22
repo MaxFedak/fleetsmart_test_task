@@ -2,4 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  min-width: 400px;
+}
+@media (min-width: 870px) {
+  .table {
+    justify-content: center;
+  }
+}
+@media (min-width: 1388px) {
+  .table {
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=table.css.map */

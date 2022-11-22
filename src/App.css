@@ -8,9 +8,9 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  min-width: 970px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
+  min-width: 870px;
 }
 
 .content {
