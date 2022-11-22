@@ -1,3 +1,5 @@
+@import '../utils/vriables.scss';
+
 .side-content {
    position: sticky;
    top: 0;
@@ -5,8 +7,9 @@
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-between;
-   padding: 20px 30px;
-   width: 400px;
+   padding: $sidbar-padding;
+   width: $sidebar-width;
+   box-sizing: border-box;
 
    background-color: #482673;
    color: white;

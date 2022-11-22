@@ -1,3 +1,5 @@
+@import '../utils/vriables.scss';
+
 $width: 350px;
 $img-width: 200px;
 $text-area-padding: 10px;
@@ -12,6 +14,8 @@ $last-row-margin: 0px;
    border-radius: 15px;
    padding: 15px;
    margin: 60px 50px 0px;
+
+   font-family: $font;
 
    color: #482673;
 

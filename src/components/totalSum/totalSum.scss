@@ -1,3 +1,5 @@
+@import '../utils/vriables.scss';
+
 .sum {
    display: flex;
    flex-direction: column;
@@ -7,6 +9,8 @@
    padding: 15px;
    box-sizing: border-box;
    background-color: transparent;
+
+   font-family: $font;
 
    &__value {
       align-self: flex-end;

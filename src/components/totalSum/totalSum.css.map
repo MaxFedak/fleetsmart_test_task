@@ -1,1 +1,1 @@
-{"version":3,"sources":["totalSum.scss","totalSum.css"],"names":[],"mappings":"AAAA;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;ACCH;ADCG;EACG,oBAAA;ACCN","file":"totalSum.css"}
+{"version":3,"sources":["totalSum.scss","../utils/vriables.scss","totalSum.css"],"names":[],"mappings":"AAEA;EACG,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EAEA,yCCPI;ACKP;AFIG;EACG,oBAAA;AEFN","file":"totalSum.css"}

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import './components/utils/vriables.scss'
+
 * {
    margin: 0;
 }
@@ -9,7 +12,7 @@
    align-items: center;
    min-height: 100vh;
 
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: $font;
    font-weight: 700;
    min-width: 870px;
 
@@ -17,7 +20,7 @@
 
 .content {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: flex-start;
    width: 100%;
    margin-top: 75px;

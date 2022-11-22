@@ -1,6 +1,8 @@
-$name-width: 300px;
+@import '../utils/vriables.scss';
+
 $margin: 20px;
-$qty-price-width: ($name-width - $margin) / 2;
+$name-width: $sidebar-width - $sidbar-padding * 2 - $input-margin * 2;
+$qty-price-width: ($name-width - $input-margin) / 2;
 
 .input {
    width: $name-width + $margin * 2;
@@ -12,6 +14,7 @@ $qty-price-width: ($name-width - $margin) / 2;
 
    padding: 0 10px;
 
+   font-family: $font;
    background-color: transparent;
 
    &__field {
@@ -20,6 +23,7 @@ $qty-price-width: ($name-width - $margin) / 2;
       text-align: center;
       font-size: 20px;
       color: #482673;
+      box-sizing: border-box;
 
       &--name {
          width: $name-width;

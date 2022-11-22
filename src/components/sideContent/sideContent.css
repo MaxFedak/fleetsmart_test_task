@@ -6,8 +6,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 30px;
   width: 400px;
+  box-sizing: border-box;
   background-color: #482673;
   color: white;
 }

@@ -1,14 +1,20 @@
+@import '../utils/vriables.scss';
+
 .table {
    display: flex;
    flex-wrap: wrap;
    width: 100%;
    min-width: 400px;
+   font-style: $font;
+
 
    @media (min-width:870px) {
       justify-content: center;
+
    }
 
    @media (min-width:1388px) {
       justify-content: flex-start;
    }
+
 }

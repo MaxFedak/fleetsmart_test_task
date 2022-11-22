@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { nanoid } from "nanoid";
 import { TableRows } from '../tableRows/TableRows';
-import { Input } from '../input/Input';
-import { TotalPrice } from '../totalSum/TotalSum';
-import './table.css';
+
 import { SideContent } from '../sideContent/SideContent';
 import { Sort } from '../sort/Sort';
 import { Menu } from '../menu/Menu';
+import './table.css';
 
 export const Table = () => {
    const [itemList, setItemList] = useState([]);
@@ -20,11 +18,6 @@ export const Table = () => {
          setItemList(itemListArray => [...itemListArray, newItem])
       }
    }
-
-   // const headerClickHandler = e => {
-   //    sortTable(e.target.textContent, itemList);
-   //    addItemsToArray(itemList);
-   // }
 
    return (
 

@@ -1,3 +1,5 @@
+@import '../utils/vriables.scss';
+
 .menu {
    display: flex;
    justify-content: space-between;
@@ -8,6 +10,7 @@
 
    background-color: #482673;
    font-size: 30px;
+   font-family: $font;
 
    &__list {
       list-style: none;

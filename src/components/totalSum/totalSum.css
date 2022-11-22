@@ -7,6 +7,7 @@
   padding: 15px;
   box-sizing: border-box;
   background-color: transparent;
+  font-family: "Libre Franklin", sans-serif;
 }
 .sum__value {
   align-self: flex-end;

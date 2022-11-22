@@ -1,7 +1,10 @@
+@import '../utils/vriables.scss';
+
 .sort {
    display: flex;
    justify-content: center;
    width: 100%;
+   font-family: $font;
 
    &__name {
       margin: 10px 20px;

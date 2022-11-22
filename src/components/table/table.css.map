@@ -1,1 +1,1 @@
-{"version":3,"sources":["table.scss","table.css"],"names":[],"mappings":"AAAA;EACG,aAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;ACCH;ADCG;EANH;IAOM,uBAAA;ECEJ;AACF;ADAG;EAVH;IAWM,2BAAA;ECGJ;AACF","file":"table.css"}
+{"version":3,"sources":["table.scss","../utils/vriables.scss","table.css"],"names":[],"mappings":"AAEA;EACG,aAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;EACA,wCCEI;ACHP;AFIG;EARH;IASM,uBAAA;EEDJ;AACF;AFIG;EAbH;IAcM,2BAAA;EEDJ;AACF","file":"table.css"}
