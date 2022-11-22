@@ -3,9 +3,24 @@
   position: sticky;
   top: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px 30px;
   width: 400px;
   background-color: #482673;
   color: white;
+}
+.side-content__discard {
+  display: flex;
+  align-items: flex-end;
+  background-color: #482673;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.5s;
+}
+.side-content__discard:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=sideContent.css.map */
