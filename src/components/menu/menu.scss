@@ -1,0 +1,38 @@
+.menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   width: 100%;
+   padding: 20px 0;
+
+   background-color: #ffe26a;
+   font-size: 30px;
+
+   &__list {
+      list-style: none;
+      padding-right: 170px;
+   }
+
+   &__link {
+      padding-right: 30px;
+      text-decoration: none;
+      color: #16123f;
+      transition: color 0.5s;
+
+      &:hover {
+         color: #75c9b7;
+      }
+   }
+
+   &__logo {
+      margin-left: 50px;
+      background-image: url('../../img/logo.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 55px;
+      width: 200px;
+      cursor: pointer;
+   }
+}

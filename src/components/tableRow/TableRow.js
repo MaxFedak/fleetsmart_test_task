@@ -1,6 +1,8 @@
 import { nanoid } from "nanoid";
+import './tableRow.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
+
 
 export const TableRow = ({row, list, changeList}) => {
 
@@ -13,31 +15,47 @@ export const TableRow = ({row, list, changeList}) => {
       changeList(list);
    }
 
+   const deleteRowHandler = (event) => {
+      const prodName = event.target.parentElement.parentElement.firstChild.dataset.name;
+
+      const indexToDelete = list.findIndex(item => '' + item.name === '' + prodName)
+      if (indexToDelete >= 0) {
+         list.splice(indexToDelete, 1);
+         changeList(list)
+      }
+   }
+
 
    return (
-      <>
-         {Object.entries(row).map(([key, el]) => {
-            if (key === 'quantity') {
-               return (
-                  <input data-name={row.name} key={nanoid()} type='number' className='table__element table__input' defaultValue={el} onChange={quantityChangeHandler} step={1} min={1}></input>
-               )
-            
+      <div className='item-card' key={nanoid()}>
+         <div className='item-card__img' key={nanoid()}></div>
+         <div className='item-card__text-box' key={nanoid()}>
+            {Object.entries(row).map(([key, el]) => {
+               if (key === 'quantity') {
+                  return (
+                     <input data-name={row.name} key={nanoid()} type='number' className='item-card__qty' defaultValue={el} onChange={quantityChangeHandler} step={1} min={1}></input>
+                  )
+               
+               }
+
+               if (key === 'name') {
+                  return (
+                     <div data-name={row.name} key={nanoid()} className='item-card__name'>
+                        {el}
+                     </div>
+                  );
+               }
+
+               return (            
+               <div data-name={row.name} key={nanoid()} className='item-card__price' >
+                  {el.toLocaleString("en-GB", {style:"currency", currency:"GBP"})}
+               </div>)
             }
 
-            if (key === 'name') {
-               return (
-                  <div data-name={row.name} key={nanoid()} className='table__element table__element--name' >
-                     {el}
-                  </div>
-               );
-            }
-            return (            
-            <div data-name={row.name} key={nanoid()} className='table__element' >
-               {el}
-            </div>)
-         }
 
-         )} 
-      </>
+            )} 
+            <FontAwesomeIcon key={nanoid()} className='item-card__delete-icon' icon={faTrash}  onClick={deleteRowHandler}/>
+         </div>
+      </div>
    )
 }

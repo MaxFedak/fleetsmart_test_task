@@ -1,0 +1,47 @@
+.sort {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.sort__name {
+  margin: 10px 20px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #75c9b7;
+  border: 1px solid;
+  border-color: #ffe26a;
+  font-size: 20px;
+  transition: background-color 0.5s;
+}
+.sort__name:hover {
+  background-color: #ffe26a;
+  border-color: #75c9b7;
+}
+.sort__qty {
+  margin: 10px 20px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #75c9b7;
+  border: 1px solid;
+  border-color: #ffe26a;
+  font-size: 20px;
+  transition: background-color 0.5s;
+}
+.sort__qty:hover {
+  background-color: #ffe26a;
+  border-color: #75c9b7;
+}
+.sort__price {
+  margin: 10px 20px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #75c9b7;
+  border: 1px solid;
+  border-color: #ffe26a;
+  font-size: 20px;
+  transition: background-color 0.5s;
+}
+.sort__price:hover {
+  background-color: #ffe26a;
+  border-color: #75c9b7;
+}/*# sourceMappingURL=sort.css.map */

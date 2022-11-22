@@ -37,34 +37,35 @@ export const Input = ({ addItem, list}) => {
    }
 
    return (
-      <form className='table input' onSubmit={onSubmitHandler}>
+      <form className='input' onSubmit={onSubmitHandler}>
          <input 
-            className="table__element input__new"
+            className="input__field--name input__field"
             type="text" 
             name="name" 
-            placeholder='Product*' 
+            placeholder='product name*' 
+            maxLength={16}
             onChange={onFormChangeHandler}
             required
          ></input>
          <input 
-            className="table__element input__new"
+            className="input__field input__field--quantity"
             type="number" 
             name="quantity" 
-            placeholder='Quant.'
+            placeholder='quantity'
             min={1}
             onChange={onFormChangeHandler}
          ></input>
          <input
-            className="table__element input__new"
+            className="input__field--price input__field"
             type="number" 
             name="price" 
-            placeholder='Price*' 
+            placeholder='price*' 
             step={0.01}
             min={1}
             onChange={onFormChangeHandler}
             required
             ></input>
-         <button className="table__element table__add-button" type='submit'>
+         <button className="input__field input__field--add" type='submit'>
             <FontAwesomeIcon className='table__add-icon' icon={faPlus} />
          </button>
       </form>

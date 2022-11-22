@@ -4,42 +4,11 @@ import { TableRows } from '../tableRows/TableRows';
 import { Input } from '../input/Input';
 import { TotalPrice } from '../totalSum/TotalSum';
 import './table.css';
+import { SideContent } from '../sideContent/SideContent';
+import { Sort } from '../sort/Sort';
+import { Menu } from '../menu/Menu';
 
-const sortStatus = {
-   name: 'asc',
-   quantity: 'asc',
-   price: 'asc',
-}
-
-export const sortTable = (key, itemList) => {
-
-   switch (key) {
-      case 'name':
-         sortStatus[key] === 'asc'
-            ? itemList.sort((a, b) => ('' + a.name).localeCompare('' + b.name))
-            : itemList.sort((a, b) => ('' + b.name).localeCompare('' + a.name));
-         break;
-      
-      case 'quantity':
-      case 'price':
-         sortStatus[key] === 'asc'
-            ? itemList.sort((a, b) => a[key] - b[key])
-            : itemList.sort((a, b) => b[key] - a[key]);
-         break;
-      
-      default:
-         throw new Error('wrong key');
-   }
-   test(key);
-}
-
-const test = (target) => {
-   sortStatus[target] = sortStatus[target] === 'asc'
-      ? 'desc'
-      : 'asc';
-}
-
-export const Table = ({columnNames}) => {
+export const Table = () => {
    const [itemList, setItemList] = useState([]);
 
    document.title = 'Product list'
@@ -52,24 +21,22 @@ export const Table = ({columnNames}) => {
       }
    }
 
-   const headerClickHandler = e => {
-      sortTable(e.target.textContent, itemList);
-      addItemsToArray(itemList);
-   }
+   // const headerClickHandler = e => {
+   //    sortTable(e.target.textContent, itemList);
+   //    addItemsToArray(itemList);
+   // }
 
    return (
+
       <>
-         <div className='table'>
-            {columnNames.map(item => (
-               <div key={nanoid()} className='table__element table__header' onClick={headerClickHandler}>
-                  {item}
-               </div>
-            ))}
-            <div className='table__element'></div>
-            <TableRows items={itemList} addItem={addItemsToArray} />
+         <Menu />
+         <Sort itemList={itemList} addItem={addItemsToArray} />
+         <div className='content'>
+            <div className='table'>
+               <TableRows items={itemList} addItem={addItemsToArray} />
+            </div>
+            <SideContent itemList={itemList} addItemsToArray={addItemsToArray} />
          </div>
-         <Input addItem={addItemsToArray} list={itemList}/>
-         <TotalPrice list={itemList} />
       </>
    );
 }

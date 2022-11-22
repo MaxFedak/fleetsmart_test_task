@@ -9,18 +9,22 @@
    align-items: center;
    min-height: 100vh;
 
+   min-width: 970px;
+
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-weight: 700;
+
+   background: rgb(171,214,153);
+   background: linear-gradient(119deg, rgba(171,214,153,1) 0%, rgba(199,221,204,1) 100%);
 }
 
 .content {
    display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+   justify-content: space-between;
    align-items: flex-start;
-   width: 1024px;
-   height: 100%;
+   width: 100%;
    margin-top: 75px;
+
 
 
    &__header {
