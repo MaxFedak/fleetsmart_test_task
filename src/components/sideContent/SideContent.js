@@ -9,6 +9,7 @@ export const SideContent = ({itemList, addItemsToArray}) => {
    const discrardClickHandler = (e) => {
       addItemsToArray([]);
    }
+
    return (
       <div className='side-content'>
          <h1>
@@ -21,5 +22,5 @@ export const SideContent = ({itemList, addItemsToArray}) => {
          <Input addItem={addItemsToArray} list={itemList}/>
          <TotalPrice list={itemList} />
       </div>
-   )
+   );
 }

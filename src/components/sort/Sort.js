@@ -7,7 +7,7 @@ const sortStatus = {
    name: 'asc',
    quantity: 'asc',
    price: 'asc',
-}
+};
 
 export const sortTable = (key, itemList) => {
 
@@ -39,7 +39,7 @@ const changeSortStatus = (target) => {
 
 export const Sort = ({itemList, addItem}) => {
    const sortClickHandler = (event) =>{
-      sortTable(event.target.dataset.key, itemList)
+      sortTable(event.target.dataset.key, itemList);
       addItem(itemList);
    }
    

@@ -27,13 +27,11 @@ export const Input = ({ addItem, list}) => {
          addItem(list)
       } else {
          addItem(newProduct);
-         console.log(event)
       }
 
       const allInputs = [...document.querySelectorAll('input')];
       allInputs.map(item => item.value = '')
          
-
    }
 
    return (
@@ -69,6 +67,6 @@ export const Input = ({ addItem, list}) => {
             <FontAwesomeIcon className='table__add-icon' icon={faPlus} />
          </button>
       </form>
-   )
+   );
 }
 

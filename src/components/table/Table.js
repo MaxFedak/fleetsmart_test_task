@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { TableRows } from '../tableRows/TableRows';
-
 import { SideContent } from '../sideContent/SideContent';
 import { Sort } from '../sort/Sort';
 import { Menu } from '../menu/Menu';
@@ -9,7 +8,7 @@ import './table.css';
 export const Table = () => {
    const [itemList, setItemList] = useState([]);
 
-   document.title = 'Product list'
+   document.title = 'Product list';
 
    const addItemsToArray = (newItem) => {
       if (newItem instanceof Array) {
@@ -20,7 +19,6 @@ export const Table = () => {
    }
 
    return (
-
       <>
          <Menu />
          <Sort itemList={itemList} addItem={addItemsToArray} />

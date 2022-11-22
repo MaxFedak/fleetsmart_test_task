@@ -10,5 +10,5 @@ export const TotalPrice = ({list}) => {
             {`${totPrice.toLocaleString("en-GB", {style:"currency", currency:"GBP"})}`}
          </h1>
       </div>
-   )
+   );
 }

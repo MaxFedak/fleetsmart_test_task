@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './tableRow.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 export const TableRow = ({row, list, changeList}) => {
 
@@ -22,7 +22,7 @@ export const TableRow = ({row, list, changeList}) => {
 
       if (indexToDelete >= 0) {
          list.splice(indexToDelete, 1);
-         changeList(list)
+         changeList(list);
       }
    }
 
@@ -74,5 +74,5 @@ export const TableRow = ({row, list, changeList}) => {
             />
          </div>
       </div>
-   )
+   );
 }

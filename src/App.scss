@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
-@import './components/utils/vriables.scss'
+@import './components/utils/vriables.scss';
 
 * {
    margin: 0;
@@ -20,7 +20,7 @@
 
 .content {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: flex-start;
    width: 100%;
    margin-top: 75px;
