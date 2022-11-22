@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fleetsmart_test_task/static/css/main.93d063d2.css",
-    "main.js": "/fleetsmart_test_task/static/js/main.36dba932.js",
+    "main.css": "/fleetsmart_test_task/static/css/main.b58d067b.css",
+    "main.js": "/fleetsmart_test_task/static/js/main.d831720a.js",
     "static/js/787.a3d96dd9.chunk.js": "/fleetsmart_test_task/static/js/787.a3d96dd9.chunk.js",
     "static/media/logo.svg": "/fleetsmart_test_task/static/media/logo.ca1d5d26ee8b117de7f7.svg",
     "index.html": "/fleetsmart_test_task/index.html",
-    "main.93d063d2.css.map": "/fleetsmart_test_task/static/css/main.93d063d2.css.map",
-    "main.36dba932.js.map": "/fleetsmart_test_task/static/js/main.36dba932.js.map",
+    "main.b58d067b.css.map": "/fleetsmart_test_task/static/css/main.b58d067b.css.map",
+    "main.d831720a.js.map": "/fleetsmart_test_task/static/js/main.d831720a.js.map",
     "787.a3d96dd9.chunk.js.map": "/fleetsmart_test_task/static/js/787.a3d96dd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93d063d2.css",
-    "static/js/main.36dba932.js"
+    "static/css/main.b58d067b.css",
+    "static/js/main.d831720a.js"
   ]
 }
