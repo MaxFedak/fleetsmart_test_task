@@ -3,29 +3,29 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
-  background-color: #ffe26a;
+  padding: 20px 0px;
+  background-color: #482673;
   font-size: 30px;
 }
 .menu__list {
   list-style: none;
-  padding-right: 170px;
+  margin-right: 50px;
 }
 .menu__link {
   padding-right: 30px;
   text-decoration: none;
-  color: #16123f;
+  color: white;
   transition: color 0.5s;
 }
 .menu__link:hover {
-  color: #75c9b7;
+  color: #f6ebf4;
 }
 .menu__logo {
   margin-left: 50px;
   background-image: url("../../img/logo.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 55px;
   width: 200px;
   cursor: pointer;

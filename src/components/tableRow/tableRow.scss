@@ -1,4 +1,4 @@
-$width: 430px;
+$width: 350px;
 $img-width: 200px;
 $text-area-padding: 10px;
 $text-area-width: $width - $img-width - $text-area-padding * 2;
@@ -8,11 +8,14 @@ $last-row-margin: 0px;
    display: flex;
    width: $width;
 
-   background-color: #75c9b7;
-   border: 1px solid #ffe26a;
+   border: 2px solid #482673;
    border-radius: 15px;
    padding: 15px;
    margin: 60px 50px 0px;
+
+   color: #482673;
+
+   // transition: transform 0.5s;
 
    &__text-box {
       display: flex;
@@ -67,5 +70,10 @@ $last-row-margin: 0px;
       background-image: url('../../img/222.png');
       height: 150px;
       width: $img-width;
+   }
+
+   &:hover {
+      transform: scale(1.2);
+
    }
 }

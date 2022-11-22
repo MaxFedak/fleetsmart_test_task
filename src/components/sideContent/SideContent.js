@@ -10,7 +10,7 @@ export const SideContent = ({itemList, addItemsToArray}) => {
       <div className='side-content'>
          <h1>
             <FontAwesomeIcon icon={faCartShopping} />
-            Product card
+            {' Product card'}
          </h1>
          <Input addItem={addItemsToArray} list={itemList}/>
          <TotalPrice list={itemList} />

@@ -11,8 +11,6 @@
   min-width: 970px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  background: rgb(171, 214, 153);
-  background: linear-gradient(119deg, rgb(171, 214, 153) 0%, rgb(199, 221, 204) 100%);
 }
 
 .content {

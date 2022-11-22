@@ -43,7 +43,7 @@ export const Input = ({ addItem, list}) => {
             type="text" 
             name="name" 
             placeholder='product name*' 
-            maxLength={16}
+            maxLength={13}
             onChange={onFormChangeHandler}
             required
          ></input>
