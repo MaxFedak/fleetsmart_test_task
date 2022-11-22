@@ -26,7 +26,6 @@ export const TableRow = ({row, list, changeList}) => {
       }
    }
 
-
    return (
       <div className='item-card'>
          <div className='item-card__img'></div>

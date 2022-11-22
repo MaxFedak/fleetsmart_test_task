@@ -7,8 +7,8 @@ export const TableRows = ({items, addItem}) => {
    <>
       {items.map(row => (
          <React.Fragment key={nanoid()}>
-            <TableRow row={row} list={items} changeList={addItem} key={nanoid()}/>
-            <div key={nanoid()} className='table__element' data-name={row.name}></div>
+            <TableRow row={row} list={items} changeList={addItem} />
+            <div className='table__element' data-name={row.name}></div>
          </React.Fragment>
       ))}
    </>

@@ -3,7 +3,7 @@ import { faSort } from '@fortawesome/free-solid-svg-icons'
 import './sort.css'
 
 
-const sortStatus = {
+export const sortStatus = {
    name: 'asc',
    quantity: 'asc',
    price: 'asc',
@@ -31,7 +31,7 @@ export const sortTable = (key, itemList) => {
    changeSortStatus(key);
 }
 
-const changeSortStatus = (target) => {
+export const changeSortStatus = (target) => {
    sortStatus[target] = sortStatus[target] === 'asc'
       ? 'desc'
       : 'asc';
